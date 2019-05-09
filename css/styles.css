@@ -1,0 +1,145 @@
+
+/*General text on webpage set to Open Sans provided by Google Fonts*/
+.text {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Ensure all links have a large enough touch target*/
+a {
+  padding: 1.5em;
+}
+
+#horizontal-line {
+  border-top: 4px solid lightgrey;
+}
+
+/*Ref: https://www.w3schools.com/css/css3_flexbox.asp*/
+/*Flex containers pertain to my header div and body-featured-work div*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Name in header text set to Roboto Mono provided by Google Fonts*/
+.portfolio-name {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40px;
+  color: #EB4DA1; /*Pink*/
+  text-shadow: 0px 1px 1px #000;
+  margin: 0px;
+}
+
+.header-text-elements, .portfolio-title {
+  text-align: center;
+  margin: auto;
+}
+
+.header .logo {
+  margin: auto;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*Each project card in the body-featured-work container*/
+.featured-block {
+  margin: 3px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 4px 4px lightgrey;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.featured-block:hover {
+  box-shadow: 2px 2px lightgrey;
+  opacity: 1.0;
+}
+
+.project-title-text {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+}
+
+.featured-work-image {
+    width: 100%;
+  }
+
+.link-text {
+  text-align: center;
+  display: block;
+  margin-bottom: 25px;
+  color: #8e22f9; /*Purple*/
+  cursor: pointer;
+}
+
+/*Media queries*/
+/*Next viewport - from 449px to 654px - breakpoint*/
+@media only screen and (min-width: 449px) and (max-width: 654px) {
+  .featured-block {
+    width: 48%;
+  }
+
+  .featured-work-image {
+    width: 100%;
+  }
+  
+  .header .logo {
+    margin-left: 0px;
+  }
+}
+
+/*Next viewport - from 655px to 899px - breakpoint*/
+@media only screen and (min-width: 655px) and (max-width: 899px) {
+  .featured-block {
+    width: 32%;
+  }
+
+  .featured-work-image {
+    width: 100%;
+  }
+  
+  .header .logo {
+    margin-left: 0px;
+  }
+  
+  .header-text-elements {
+    margin: 0px;
+  }
+}
+
+/*Last viewport - 800px upward - breakpoint*/
+@media only screen and (min-width: 900px) {
+  .main-image {
+    width: 100%;
+  }
+
+  .featured-block {
+    width: 32%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .featured-work-image {
+    width: 100%;
+  }
+
+  body {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+ .header .logo {
+    margin-left: 0px;
+  }
+  
+  .header-text-elements {
+    margin: 0px;
+  }
+}
